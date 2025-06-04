@@ -7,7 +7,7 @@
 
 @if (Model.Any())
 {
-    <a asp-action="Create" class="btn btn-primary">Create Employee</a>
+    <a asp-action="RegisterStudent" class="btn btn-primary">Create Student</a>
 
     <table class="table table-bordered">
         <tr>
@@ -51,7 +51,7 @@
 else
 {
     <div class="alert alert-warning">
-        No Employees in this list,
-        <a asp-action="Create" class="btn btn-primary">Create</a>
+        No Students in this list,
+        <a asp-action="RegisterStudent" class="btn btn-primary">Create</a>
     </div>
 }

@@ -1,0 +1,61 @@
+﻿@model Course
+@{
+    ViewData["Title"] = "EditCourse";
+}
+
+<h1>EditCourse</h1>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-action="EditCourse" method="post">
+    @Html.HiddenFor(x => x.Id)
+    <table class="table table-bordered">
+        <tr>
+            <td> <label asp-for="Title"></label>
+            <td>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </td>
+        <tr>
+            <td> <label asp-for="Description"></label> </td>
+            <td>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label asp-for="Duration"></label></td>
+            <td>
+                <input asp-for="Duration" class="form-control" />
+                <span asp-validation-for="Duration" class="text-danger"></span>
+            </td>
+        <tr>
+            <td><label asp-for="Price"></label></td>
+            <td>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label asp-for="Capacity"></label></td>
+            <td>
+                <input asp-for="Capacity" class="form-control" />
+                <span asp-validation-for="Capacity" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td> <label asp-for="Instructor"></label> </td>
+            <td>
+                <select asp-for="InstructorId" asp-items="ViewBag.AllInstructors" class="form-select">
+                    <option selected>-- select option --</option>
+                </select>
+                <span asp-validation-for="InstructorId" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Save" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-primary">Cancel</a>
+            </td>
+        </tr>
+    </table>
+</form>

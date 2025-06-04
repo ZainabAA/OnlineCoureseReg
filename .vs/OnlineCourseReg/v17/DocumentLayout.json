@@ -1,0 +1,249 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\views\\account\\liststudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:views\\account\\liststudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineCourseReg/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\areas\\administrator\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:areas\\administrator\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\areas\\administrator\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:areas\\administrator\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\areas\\administrator\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:areas\\administrator\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\views\\courses\\listcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:views\\courses\\listcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\views\\courses\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:views\\courses\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\views\\account\\editinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:views\\account\\editinstructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|c:\\users\\lenovo\\documents\\coded\\onlinecouresereg\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17B6C21F-9BD5-4B91-1409-36B20ADF805A}|OnlineCourseReg.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListStudents.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Views\\Account\\ListStudents.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ListStudents.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Views\\Account\\ListStudents.cshtml",
+              "RelativeToolTip": "Views\\Account\\ListStudents.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T19:58:38.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAcwCUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T19:11:08.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineCourseReg/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-06-04T19:44:12.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Areas\\Administrator\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Areas\\Administrator\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Areas\\Administrator\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Areas\\Administrator\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T19:19:15.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Areas\\Administrator\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Administrator\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Areas\\Administrator\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Administrator\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T19:22:59.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T19:50:45.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Areas\\Administrator\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Administrator\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Areas\\Administrator\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\Administrator\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T19:20:20.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListCourses.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Views\\Courses\\ListCourses.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\ListCourses.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Views\\Courses\\ListCourses.cshtml",
+              "RelativeToolTip": "Views\\Courses\\ListCourses.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T17:36:52.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditInstructor.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Views\\Account\\EditInstructor.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\EditInstructor.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Views\\Account\\EditInstructor.cshtml",
+              "RelativeToolTip": "Views\\Account\\EditInstructor.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T17:35:15.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EditCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Views\\Courses\\EditCourse.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\EditCourse.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Views\\Courses\\EditCourse.cshtml",
+              "RelativeToolTip": "Views\\Courses\\EditCourse.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAuwC0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T17:34:56.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAqwFMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T17:10:22.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Views\\Courses\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Views\\Courses\\Create.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Create.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T17:36:36.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\CODED\\OnlineCoureseReg\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T17:17:53.681Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

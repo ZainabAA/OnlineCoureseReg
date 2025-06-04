@@ -1,0 +1,57 @@
+@model IEnumerable<Instructor>
+@{
+    ViewData["Title"] = "ListInstructors";
+}
+
+<h1>List Instructors</h1>
+
+@if (Model.Any())
+{
+    <a asp-action="RegisterInstructor" class="btn btn-primary">Create Instructor</a>
+
+    <table class="table table-bordered">
+        <tr>
+            <td>
+                @Html.DisplayNameFor(x => x.First().UserName)
+            </td>
+            <td>
+                @Html.DisplayNameFor(x => x.First().Email)
+            </td>
+            <td>
+                @Html.DisplayNameFor(x => x.First().Major)
+            </td>
+            <td>Operations</td>
+        </tr>
+
+        @foreach (var std in Model)
+        {
+            <tr>
+                <td>@std.UserName</td>
+                <td>@std.Email</td>
+                <td>@std.Major</td>
+                <td>
+                    <a asp-action="InstructorDetails"
+                       asp-route-id="@std.Id"
+                       class="btn btn-secondary"> More Details </a>
+
+                    <a asp-action="EditInstructor"
+                       asp-route-id="@std.Id"
+                       class="btn btn-warning"> Edit </a>
+
+                    <a asp-action="DeleteInstructor"
+                       asp-route-id="@std.Id"
+                       class="btn btn-danger"> Remove </a>
+                </td>
+            </tr>
+        }
+
+    </table>
+
+}
+else
+{
+    <div class="alert alert-warning">
+        No Instructor in this list,
+        <a asp-action="RegisterInstructor" class="btn btn-primary">Create</a>
+    </div>
+}

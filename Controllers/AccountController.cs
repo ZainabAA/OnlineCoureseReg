@@ -13,14 +13,16 @@ namespace OnlineCourseReg.Controllers
         #region Configuration
         private UserManager<IdentityUser> _userManager;
         private SignInManager<IdentityUser> _signinManager;
+        private RoleManager<IdentityRole> _roleManager;
         private AppDbContext _context;
 
         public AccountController(UserManager<IdentityUser> usrMgr, SignInManager<IdentityUser> signInManager, 
-            AppDbContext ctx)
+            AppDbContext ctx, RoleManager<IdentityRole> roleManager)
         {
             _userManager = usrMgr;
             _signinManager = signInManager;
             _context = ctx;
+            _roleManager = roleManager;
         }
         #endregion
 
@@ -131,6 +133,14 @@ namespace OnlineCourseReg.Controllers
         #endregion
 
         #region Instructor
+
+        [HttpGet]
+        public IActionResult ListInstructors()
+        {
+
+            return View(_context.Instructors);
+        }
+
         [HttpGet]
         public IActionResult RegisterInstructor()
         {
@@ -162,13 +172,79 @@ namespace OnlineCourseReg.Controllers
             }
             return View(model);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> EditInstructor(string id)
+        {
+            IdentityUser usr = (Instructor)await _userManager.FindByIdAsync(id);
+            if (usr != null)
+            {
+                return View(usr);
+
+            }
+            return RedirectToAction(nameof(ListStudents));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditInstructor(Instructor instructor)
+        {
+            if (ModelState.IsValid)
+            {
+                Instructor usr = (Instructor)_userManager.Users.Where(r => r.Id == instructor.Id).FirstOrDefault();
+                if (usr != null)
+                {
+                    usr.PhoneNumber = instructor.PhoneNumber;
+                    usr.UserName = instructor.UserName;
+                    usr.Email = instructor.Email;
+                    usr.Major = instructor.Major;
+
+                    var result = await _userManager.UpdateAsync(usr);
+                    if (result.Succeeded)
+                        return RedirectToAction(nameof(ListInstructors));
+                    else
+                    {
+                        foreach (var err in result.Errors)
+                        {
+                            ModelState.AddModelError(err.Code, err.Description);
+                        }
+                    }
+                }
+            }
+            return View(instructor);
+        }
+
+        [HttpGet]
+        public IActionResult DeleteInstructor(string? id)
+        {
+            var current = _context.Instructors.Where(e => e.Id == id).FirstOrDefault();
+            return View(current);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteInstructor(Instructor instructor)
+        {
+            Instructor usr = (Instructor)_userManager.Users.Where(r => r.Id == instructor.Id).FirstOrDefault();
+            if (usr != null)
+            {
+                var result = await _userManager.DeleteAsync(usr);
+                if (result.Succeeded)
+                    return RedirectToAction(nameof(ListInstructors));
+                foreach (var err in result.Errors)
+                {
+                    ModelState.AddModelError(err.Code, err.Description);
+                }
+            }
+            return View(instructor);
+        }
         #endregion
 
         [HttpGet]
         public IActionResult Login()
         {
-            if (_signinManager.IsSignedIn(User))
+            if (_signinManager.IsSignedIn(User)) 
+            { 
                 return RedirectToAction("Index", "Home");
+            }
             return View();
         }
 
@@ -183,7 +259,13 @@ namespace OnlineCourseReg.Controllers
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    IdentityUser usr = await _userManager.FindByNameAsync(model.UserName);
+                    var rolesList = await _userManager.GetRolesAsync(usr);
+                    //if (rolesList.Any() && rolesList.Where(r => r == "Admin").Any())
+                    //{
+                        return RedirectToAction("Index", "Home", new {area = "Administrator" });
+                    //}
+                    //return RedirectToAction("Index", "Home");
                 }
                 else
                 {

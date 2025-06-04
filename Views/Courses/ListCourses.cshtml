@@ -1,0 +1,65 @@
+@model IEnumerable<Course>
+@{
+    ViewData["Title"] = "ListCourses";
+}
+
+<h1>List Couses</h1>
+
+@if (Model.Any())
+{
+    <a asp-action="Create" class="btn btn-primary">Create Course</a>
+
+    <table class="table table-bordered">
+        <tr>
+            <td>
+                @Html.DisplayNameFor(x => x.First().Title)
+            </td>
+            <td>
+                @Html.DisplayNameFor(x => x.First().Description)
+            </td>
+            <td>
+                @Html.DisplayNameFor(x => x.First().Capacity)
+            </td>
+            <td>
+                @Html.DisplayNameFor(x => x.First().Price)
+            </td>
+            <td>
+                @Html.DisplayNameFor(x => x.First().Duration)
+            </td>
+            <td>Operations</td>
+        </tr>
+
+        @foreach (var std in Model)
+        {
+            <tr>
+                <td>@std.Title</td>
+                <td>@std.Description</td>
+                <td>@std.Capacity</td>
+                <td>@std.Price</td>
+                <td>@std.Duration</td>
+                <td>
+                    <a asp-action="CourseDetails"
+                       asp-route-id="@std.Id"
+                       class="btn btn-secondary"> More Details </a>
+
+                    <a asp-action="EditCourse"
+                       asp-route-id="@std.Id"
+                       class="btn btn-warning"> Edit </a>
+
+                    <a asp-action="DeleteCourse"
+                       asp-route-id="@std.Id"
+                       class="btn btn-danger"> Remove </a>
+                </td>
+            </tr>
+        }
+
+    </table>
+
+}
+else
+{
+    <div class="alert alert-warning">
+        No Course in this list,
+        <a asp-action="Create" class="btn btn-primary">Create</a>
+    </div>
+}

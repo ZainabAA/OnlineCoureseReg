@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace OnlineCourseReg.Models
 {
@@ -16,7 +17,6 @@ namespace OnlineCourseReg.Models
         [ForeignKey("Instructor")]
         public string InstructorId { get; set; }
         public Instructor? Instructor { get; set; }
-
         public List<Student>? Students { get; set; }
     }
 }

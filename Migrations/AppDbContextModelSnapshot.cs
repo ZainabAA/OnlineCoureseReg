@@ -292,13 +292,9 @@ namespace OnlineCourseReg.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("StudentId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CourseId");
-
-                    b.HasIndex("StudentId");
 
                     b.ToTable("CourseStudents");
                 });
@@ -400,21 +396,6 @@ namespace OnlineCourseReg.Migrations
                         .IsRequired();
 
                     b.Navigation("Instructor");
-                });
-
-            modelBuilder.Entity("OnlineCourseReg.Models.CourseStudent", b =>
-                {
-                    b.HasOne("OnlineCourseReg.Models.Course", "Course")
-                        .WithMany()
-                        .HasForeignKey("CourseId");
-
-                    b.HasOne("OnlineCourseReg.Models.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("StudentId");
-
-                    b.Navigation("Course");
-
-                    b.Navigation("Student");
                 });
 #pragma warning restore 612, 618
         }
