@@ -13,7 +13,7 @@ namespace OnlineCourseReg.Data
         public DbSet<Student> Students { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Course> Courses { get; set; }
-        public DbSet<StudentCourse> StudentsCourses { get; set; }
+        public DbSet<CourseStudent> CourseStudents { get; set; }
 
     }
 }

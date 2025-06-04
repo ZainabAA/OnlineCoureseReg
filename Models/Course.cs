@@ -16,5 +16,7 @@ namespace OnlineCourseReg.Models
         [ForeignKey("Instructor")]
         public string InstructorId { get; set; }
         public Instructor? Instructor { get; set; }
+
+        public List<Student>? Students { get; set; }
     }
 }

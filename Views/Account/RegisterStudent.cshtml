@@ -1,0 +1,59 @@
+﻿@model RegisterStudentViewModel
+@{
+    ViewData["Title"] = "RegisterStudent";
+}
+
+<h1>RegisterStudent</h1>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-action="RegisterStudent" method="post">
+    <table class="table table-bordered">
+        <tr>
+            <td><label asp-for="UserName"></label></td>
+            <td>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label asp-for="Email"></label></td>
+            <td>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label asp-for="Password"></label></td>
+            <td>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label asp-for="ConfirmPassword"></label></td>
+            <td>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label asp-for="PhoneNumber"></label></td>
+            <td>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label asp-for="City"></label></td>
+            <td>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" class="btn btn-success" value="Register" />
+            </td>
+        </tr>
+    </table>
+</form>

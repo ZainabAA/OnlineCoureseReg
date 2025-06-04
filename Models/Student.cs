@@ -12,5 +12,6 @@ namespace OnlineCourseReg.Models
         //public string Email { get; set; }
         //public int Phone { get; set; }
         public string City { get; set; }
+        public List<Course>? RegisteredCourses { get; set; }
     }
 }
