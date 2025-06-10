@@ -1,4 +1,4 @@
-@model IEnumerable<Instructor>
+﻿@model IEnumerable<Instructor>
 @{
     ViewData["Title"] = "ListInstructors";
 }
@@ -7,7 +7,7 @@
 
 @if (Model.Any())
 {
-    <a asp-action="RegisterInstructor" class="btn btn-primary">Create Instructor</a>
+    <a asp-action="RegisterInstructor" asp-controller="Account" class="btn btn-primary">Create Instructor</a>
 
     <table class="table table-bordered">
         <tr>

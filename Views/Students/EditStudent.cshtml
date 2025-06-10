@@ -1,12 +1,12 @@
-@model Instructor
+﻿@model Student
 @{
-    ViewData["Title"] = "EditInstructor";
+    ViewData["Title"] = "EditStudent";
 }
 
-<h1>EditInstructor</h1>
+<h1>Edit Student</h1>
 
 <div asp-validation-summary="All" class="text-danger"></div>
-<form asp-action="EditInstructor" method="post">
+<form asp-action="EditStudent" method="post">
     @Html.HiddenFor(x => x.Id)
     <table class="table table-bordered">
         <tr>
@@ -29,16 +29,16 @@
                 <span asp-validation-for="PhoneNumber" class="text-danger"></span>
             </td>
         <tr>
-            <td><label asp-for="Major"></label></td>
+            <td><label asp-for="City"></label></td>
             <td>
-                <input asp-for="Major" class="form-control" />
-                <span asp-validation-for="Major" class="text-danger"></span>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
             </td>
         </tr>
         <tr>
             <td colspan="2">
                 <input type="submit" value="Save" class="btn btn-success" />
-                <a asp-action="Index" class="btn btn-primary">Cancel</a>
+                <a asp-action="ListStudents" class="btn btn-primary">Cancel</a>
             </td>
         </tr>
     </table>

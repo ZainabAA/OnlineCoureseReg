@@ -3,11 +3,11 @@
     ViewData["Title"] = "ListStudents";
 }
 
-<h1>ListStudents</h1>
+<h1>List Students</h1>
 
 @if (Model.Any())
 {
-    <a asp-action="RegisterStudent" class="btn btn-primary">Create Student</a>
+    <a asp-action="RegisterStudent" asp-controller="Account" class="btn btn-primary">Create Student</a>
 
     <table class="table table-bordered">
         <tr>

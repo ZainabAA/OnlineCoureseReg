@@ -3,68 +3,66 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OnlineCourseReg.Data;
 using OnlineCourseReg.Models;
-using OnlineCourseReg.Models.ViewModels;
 
 namespace OnlineCourseReg.Controllers
 {
-    public class StudentsController : Controller
+    public class InstructorsController : Controller
     {
         #region Configuration
         private UserManager<IdentityUser> _userManager;
         private SignInManager<IdentityUser> _signinManager;
+        private RoleManager<IdentityRole> _roleManager;
         private AppDbContext _context;
 
-        public StudentsController(UserManager<IdentityUser> usrMgr, SignInManager<IdentityUser> signInManager,
-            AppDbContext ctx)
+        public InstructorsController(UserManager<IdentityUser> usrMgr, SignInManager<IdentityUser> signInManager,
+            AppDbContext ctx, RoleManager<IdentityRole> roleManager)
         {
             _userManager = usrMgr;
             _signinManager = signInManager;
             _context = ctx;
+            _roleManager = roleManager;
         }
         #endregion
 
-        #region Students
-        [HttpGet]
-        public IActionResult Register()
+        public IActionResult Index()
         {
             return View();
         }
+
         [HttpGet]
-        public IActionResult ListStudents()
+        public IActionResult ListInstructors()
         {
 
-            return View(_context.Students.Include(c => c.RegisteredCourses));
+            return View(_context.Instructors);
         }
-
-
         [HttpGet]
-        public async Task<IActionResult> EditStudent(string id)
+        public async Task<IActionResult> EditInstructor(string id)
         {
-            IdentityUser usr = (Student)await _userManager.FindByIdAsync(id);
+            IdentityUser usr = (Instructor)await _userManager.FindByIdAsync(id);
             if (usr != null)
             {
                 return View(usr);
 
             }
-            return RedirectToAction("ListStudents", "Students");
+            return RedirectToAction(nameof(ListInstructors));
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditStudent(Student student)
+        public async Task<IActionResult> EditInstructor(Instructor instructor)
         {
             if (ModelState.IsValid)
             {
-                Student usr = (Student)_userManager.Users.Where(r => r.Id == student.Id).FirstOrDefault();
+                Instructor usr = (Instructor)_userManager.Users.Where(r => r.Id == instructor.Id).FirstOrDefault();
                 if (usr != null)
                 {
-                    usr.PhoneNumber = student.PhoneNumber;
-                    usr.UserName = student.UserName;
-                    usr.Email = student.Email;
-                    usr.City = student.City;
+                    usr.PhoneNumber = instructor.PhoneNumber;
+                    usr.UserName = instructor.UserName;
+                    usr.Email = instructor.Email;
+                    usr.Major = instructor.Major;
 
                     var result = await _userManager.UpdateAsync(usr);
                     if (result.Succeeded)
-                        return RedirectToAction("ListStudents", "Students");
+                        return RedirectToAction("ListInstructors", "Instructors");
                     else
                     {
                         foreach (var err in result.Errors)
@@ -74,35 +72,33 @@ namespace OnlineCourseReg.Controllers
                     }
                 }
             }
-            return View(student);
+            return View(instructor);
         }
 
-
         [HttpGet]
-        public IActionResult DeleteStudent(string? id)
+        public IActionResult DeleteInstructor(string? id)
         {
-            var current = _context.Students.Where(e => e.Id == id).FirstOrDefault();
+            var current = _context.Instructors.Where(e => e.Id == id).FirstOrDefault();
             return View(current);
         }
 
         [HttpPost]
-        public async Task<IActionResult> DeleteStudent(Student student)
+        public async Task<IActionResult> DeleteInstructor(Instructor instructor)
         {
-            Student usr = (Student)_userManager.Users.Where(r => r.Id == student.Id).FirstOrDefault();
+            Instructor usr = (Instructor)_userManager.Users.Where(r => r.Id == instructor.Id).FirstOrDefault();
             if (usr != null)
             {
                 var result = await _userManager.DeleteAsync(usr);
                 if (result.Succeeded)
-                    return RedirectToAction("ListStudents", "Students");
+                    return RedirectToAction("ListInstructors", "Instructors");
                 foreach (var err in result.Errors)
                 {
                     ModelState.AddModelError(err.Code, err.Description);
                 }
             }
-            return View(student);
+            return View(instructor);
         }
 
-        #endregion
 
     }
 }

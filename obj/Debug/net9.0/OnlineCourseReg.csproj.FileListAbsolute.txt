@@ -209,8 +209,6 @@ C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\c
 C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\compressed\wsspdtizux-muycvpuwrr.gz
 C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\compressed\v6kjmgfrt9-87fc7y1x7t.gz
 C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\compressed\1l77qju3af-mlv21k5csn.gz
-C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\compressed\9x9q5q5szt-s4t900zjnu.gz
-C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\compressed\a6qwevbmap-s4t900zjnu.gz
 C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -684,3 +682,6 @@ C:\Users\Lenovo\Documents\CODED\OnlineCoureseReg\obj\Debug\net9.0\ref\OnlineCour
 C:\Users\Lenovo\Documents\CODED\OnlineCoureseReg\obj\Debug\net9.0\scopedcss\Areas\Administrator\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Lenovo\Documents\CODED\OnlineCoureseReg\obj\Debug\net9.0\compressed\9x9q5q5szt-twb50l9s7g.gz
 C:\Users\Lenovo\Documents\CODED\OnlineCoureseReg\obj\Debug\net9.0\compressed\a6qwevbmap-twb50l9s7g.gz
+C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\scopedcss\Areas\Administrator\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\compressed\9x9q5q5szt-twb50l9s7g.gz
+C:\Users\ptadmin\source\repos\OnlineCourseReg\OnlineCourseReg\obj\Debug\net9.0\compressed\a6qwevbmap-twb50l9s7g.gz
